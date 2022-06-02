@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fin">
+
+    <Button
+        android:id="@+id/idLesResultats"
+        android:layout_width="412dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="35dp"
+        android:background="#07588F"
+        android:text="Voir les résultats "
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="417dp"
+        android:layout_height="166dp"
+        app:layout_constraintBottom_toTopOf="@+id/idResultat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/idResultat"
+        android:layout_width="396dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="9dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@+id/idSmiley"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/idSmiley"
+        android:layout_width="545dp"
+        android:layout_height="282dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idResultat"
+        app:srcCompat="@drawable/smiley_1" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="408dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="12dp"
+        android:max="3"
+        android:progress="3"
+        android:progressTint="#F78E21"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/idLesResultats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSmiley" />
+</androidx.constraintlayout.widget.ConstraintLayout>

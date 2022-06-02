@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page2">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="410dp"
+        android:layout_height="35dp"
+        android:background="#07588F"
+        android:text="Êtes-vous satisfait de votre séjour en général ?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/idProprete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSeekBar" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="410dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="#07588F"
+        android:text="Êtes-vous satisfait des repas ?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="410dp"
+        android:layout_height="166dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <RadioGroup
+        android:id="@+id/idService"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <RadioButton
+            android:id="@+id/idService1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#F78E21"
+            android:text="Très Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idService2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#F78E21"
+            android:text=" Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idService3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#F78E21"
+            android:text="Peu  Satisfait" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/idTerminer"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="35dp"
+        android:background="#F78E21"
+        android:text="Terminer"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <RatingBar
+        android:id="@+id/idProprete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="10dp"
+        android:progressTint="#F78E21"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="413dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:max="3"
+        android:progress="2"
+        android:progressTint="#07588F"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/idTerminer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idProprete" />
+
+    <SeekBar
+        android:id="@+id/idSeekBar"
+        android:layout_width="399dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:max="5"
+        android:progressTint="#F78E21"
+        android:thumbTint="#07588F"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="410dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="#07588F"
+        android:text="Êtes-vous satisfait des activités proposées ?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/idSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idService" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
